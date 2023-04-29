@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale-1.0"> 
+        <title>Saint Francis</title>
+        <!--style sheet-->
+        <link rel="stylesheet" href="visit.css"> 
+        <!--favicon icon-->
+        <link rel="icon" href="images/favicon-96x96.png">
+    </head>
+    <body>
+        <!--title & logo-->
+        <div>
+            <div class="title" style="display:flex;">
+                <div class="heading"><h4>WORKER CHILD VISIT ACTIVITY NOTE</h4></div>
+                <div class="logo"><img src="images/saint-francis-logo.png"></div>   
+            </div>
+        </div>
+        <!--first division-->
+            <div class="div1">
+                <!--client name field-->
+                        <label for="client" class="clientNameLabel">Client : </label>
+                        <input type="text" id="clientName" class="clientName" placeholder=" FirstName LastName">
+                <!--case no field-->
+                        <label for="caseNo">Case Number :</label>
+                        <input type="text" id="caseNo" class="caseNo">
+                <!--date field-->
+                        <label for="date">Date : </label>
+                        <input type="date" id="date">             
+                <div class="row">
+                <!--time from and to-->
+                        <label for="timeLengthFrom" style="margin:0px;">Time/Length From : </label>
+                        <input type="time" id="timeFrom" style="margin-right:10.2%;">
+                        <span class="timeLengthTo" style="margin:0px;">
+                             <label for="timeLengthTo" style="margin:4px;">To : </label>
+                             <input type="time" id="timeTo">
+                        </span>
+                </div>
+            </div>
+            <!--second division-->
+            <div class="div2">
+                <div>
+                    <input type="radio" name="visitType">
+                    <label style="color: gray;">CF065.1 Visit in residence</label>
+                    <span class="visitType2" style="margin:0px;">
+                         <input type="radio" name="visitType">
+                         <label style="color: gray;">CF065.2 Visit not in residence</label>
+                    </span>
+                    <div>
+                        <label for="outSidePlace">If visit outside of placement,specify place : </label>
+                        <div>
+                            <textarea id="outSidePlace" style="width:100%;"></textarea>
+                        </div>
+                        <label for="outSidePlace">List those present at visit : </label>
+                        <div>
+                            <textarea id="presentAtVisit" style="width:100%;"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Did worker spend time alone with child ?</label>
+                        <span class="spendTime" style="padding-left: 40%;">
+                        <input type="radio" name="timeSpend">
+                        <label>Yes</label>
+                        <input type="radio" name="timeSpend">
+                        <label>No</label>
+                        </span>
+                    </div>
+                    <div>
+                        <label>Placement supportive of worker meeting with child ?</label>
+                        <span class="supportiveWorkerMeeting" style="padding-left: 34.18%;">
+                        <input type="radio" name="timeSpend">
+                        <label>Yes</label>
+                        <input type="radio" name="timeSpend">
+                        <label>No</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
