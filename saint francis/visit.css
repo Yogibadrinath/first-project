@@ -55,6 +55,49 @@
         display:block;
     }
 }
+@media print {
+    *{
+     font-size: 14px;   
+    }
+    .heading h4{
+        text-align: center;
+    }
+    .logo img{
+        width: 125px;
+    }
+    input[type=text]{
+        width:120px;
+        height:20px !important;
+        font-size: 14px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    input[type=date]{
+        width:100px !important;
+        height:20px !important;
+        font-size: 14px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    input[type=time]{
+        width:65px !important;
+        height:20px !important;
+        font-size: 14px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    #timeToLabel{
+        margin-left: 12px !important;
+    }
+    .spendTime{
+        display: block;
+        padding-left: 0px !important;
+     }
+     .supportiveWorkerMeeting{
+        display: block;
+        padding-left: 0px !important;
+     }
+}
 
 /*client name input field*/
 #clientName{
